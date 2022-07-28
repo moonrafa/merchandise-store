@@ -13,6 +13,9 @@ body {
   background: var(--mainWhite);
   color: var(--mainBlack);
 }
+.nav-info {
+  color: #74c3cf;
+}
 /* nav links */
 .navbar-toggler {
   outline: none !important;
@@ -35,13 +38,19 @@ body {
   color: var(--mainBlack);
   cursor: pointer;
 }
+.logo {
+  width: 4rem;
+}
 
 .cart-info {
-  border: 0.1rem solid var(--mainBlack);
-  color: var(--mainBlack);
+  border: 0.1rem solid var(--mainPink);
+  color: var(--mainPink);
   border-radius: 0.25rem;
   padding: 0.4rem 0.6rem;
   cursor: pointer;
+}
+.cart-info .cart-info__icon {
+  color: var(--mainPink);
 }
 .cart-info:hover {
   background: var(--mainPink);
@@ -74,8 +83,9 @@ body {
 .banner-img {
   width: 30%;
   display: inline-block;
-  margin-right: -100px;
+  margin-right: -6.25rem;
   margin-left: -6.25rem;
+  font-size: 4rem;
 }
 .banner-link {
   font-size: 1.5rem;
@@ -257,4 +267,15 @@ body {
   top: 50%;
   right: 0;
   transform: translateX(60%);
+}
+
+/* responsividade */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
 }

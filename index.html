@@ -10,7 +10,10 @@
   <!-- styles  -->
   <link rel="stylesheet" href="styles.css">
   <!-- font awesome -->
-  <!--<link rel="stylesheet" href="all.css"> -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+/>
   <title>Sky Store</title>
   <style>
   </style>
@@ -21,7 +24,7 @@
   <header>
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg px-4">
-      <a class="navbar-brand" href="#"><img src="/assets/logotipo.svg" alt="logo sky store"></a>
+      <a class="navbar-brand" href="#"><img class="logo" src="/assets/logo.svg" alt="logo sky store"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
         <span class="toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
@@ -47,7 +50,7 @@
           <!-- single info -->
           <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
             <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
-            <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">10.49</span></p>
+            <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - R$<span class="item-total">10.49</span></p>
           </div>
           <!-- end of single info -->
         </div>
@@ -58,7 +61,7 @@
     <div class="container-fluid">
       <div class="row max-height justify-content-center align-items-center">
         <div class="col-10 mx-auto banner text-center">
-          <h1>Welcome to <i> <img class="banner-img" src="/assets/transparent.png" alt=""> </i>  Store</h1>
+          <h1>Welcome to <span> <i> <img class="banner-img" src="/assets/transparent.png" alt=""> </i> </span> Store</h1>
           <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
 
         </div>
@@ -69,7 +72,7 @@
             <div class="item-text">
 
               <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
-              <span>$</span>
+              <span>R$</span>
               <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
             </div>
             <a href="#" id='cart-item-remove' class="cart-item-remove">
@@ -121,15 +124,13 @@
       <div class="row">
         <div class="col-10 mx-auto col-md-6 my-5">
           <h1 class="text-capitalize">about <strong class="banner-title ">us</strong></h1>
-          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
-            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
-            porro at dolorum! Ad!</p>
+          <p class="my-4 text-muted w-75">Our mission is to bring the world of Sky to you through thoughtfully designed products reminiscent of your digital experiences. We hope our Sky creations are not seen as mere products, but rather a way to extend the beautiful memories and friendships you have made in Sky into the physical world. </p>
           <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
 
         </div>
         <div class="col-10 mx-auto col-md-6 align-self-center my-5">
           <div class="about-img__container">
-            <img src="img/sweets-1.jpeg" class="img-fluid" alt="">
+            <img src="https://pbs.twimg.com/media/EppPcRdU8AAcqYI.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -181,15 +182,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
           <div class="card ">
             <div class="img-container">
-              <img src="img/sweets-1.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/6d/60/5e/6d605e60d6a71ce52b768e9dbeb16412.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                <h5 id="store-item-name">Bundle of Light</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">96</strong></h5>
 
               </div>
             </div>
@@ -203,15 +204,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
           <div class="card ">
             <div class="img-container">
-              <img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/d3/31/4c/d3314c724c5abf3e6f0462f29e794f54.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cupcake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                <h5 id="store-item-name">Bundle of Love</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">130</strong></h5>
 
               </div>
             </div>
@@ -225,15 +226,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
           <div class="card ">
             <div class="img-container">
-              <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/dc/b6/44/dcb644a4e5214aba4859e5000e6b0ab0.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                <h5 id="store-item-name">ocean cape mug</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">36</strong></h5>
 
               </div>
             </div>
@@ -247,15 +248,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
           <div class="card ">
             <div class="img-container">
-              <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/14/bf/66/14bf66439022369518f1920cb0f4ea37.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">dougnut item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                <h5 id="store-item-name">message boats memo pad </h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">30</strong></h5>
 
               </div>
             </div>
@@ -269,15 +270,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
           <div class="card ">
             <div class="img-container">
-              <img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/c7/03/ba/c703ba0889e796c9cd8a5afa62077f33.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                <h5 id="store-item-name">3d anniversary box</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">199</strong></h5>
 
               </div>
             </div>
@@ -291,15 +292,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
           <div class="card ">
             <div class="img-container">
-              <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/33/7f/b3/337fb34945d9d07d3f3940482414e1ee.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cupcake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                <h5 id="store-item-name">nature turtle pin</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
 
               </div>
             </div>
@@ -313,15 +314,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
           <div class="card ">
             <div class="img-container">
-              <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/56/3f/5f/563f5f0949fd3c28a9b254a1b4a0bac0.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                <h5 id="store-item-name">dark dragon plush </h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">35</strong></h5>
 
               </div>
             </div>
@@ -335,15 +336,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
           <div class="card ">
             <div class="img-container">
-              <img src="img/doughnut-2.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/c2/59/22/c2592256ff2c3fcdc49afc625e84b973.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">dougnut item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                <h5 id="store-item-name">crab plush</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">29</strong></h5>
 
               </div>
             </div>
@@ -357,15 +358,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
           <div class="card ">
             <div class="img-container">
-              <img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/35/60/b0/3560b01f5f0e58611f32167285fe9e6f.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                <h5 id="store-item-name">Manta in Sky Jewelry Set</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">90</strong></h5>
 
               </div>
             </div>
@@ -379,15 +380,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
           <div class="card ">
             <div class="img-container">
-              <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/5b/fe/9f/5bfe9fb0de8607abead0ee7e8dd93f19.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cupcake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                <h5 id="store-item-name">"Ocean Meets Sky" Canvas Bag</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">38</strong></h5>
 
               </div>
             </div>
@@ -401,15 +402,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
           <div class="card ">
             <div class="img-container">
-              <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/26/78/a5/2678a577c970ec56f5b2a383f8aac73b.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                <h5 id="store-item-name">3rd anniversary stickers</h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
 
               </div>
             </div>
@@ -423,15 +424,15 @@
         <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
           <div class="card ">
             <div class="img-container">
-              <img src="img/doughnut-3.jpeg" class="card-img-top store-img" alt="">
+              <img src="https://i.pinimg.com/564x/96/30/0f/96300ff5a2532ef0488cb26b7e28fbcd.jpg" class="card-img-top store-img" alt="">
               <span class="store-item-icon">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
             <div class="card-body">
               <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">dougnut item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                <h5 id="store-item-name">Sky Kids Pin </h5>
+                <h5 class="store-item-value">R$ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
 
               </div>
             </div>
@@ -462,11 +463,11 @@
 
 
   <!-- jquery -->
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
   <!-- script js -->
-  <script src="js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

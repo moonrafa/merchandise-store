@@ -89,11 +89,12 @@ body {
 }
 .banner-link {
   font-size: 1.5rem;
-  color: var(--mainBlack);
-  border: 0.2rem solid var(--mainBlack);
+  color: var(--mainWhite);
+  border: 0.2rem solid var(--mainWhite);
+  text-shadow: 0 0 2px lightblue;
 }
 .banner-link:hover {
-  background: var(--mainBlack);
+  background: var(--mainWhite);
   color: var(--mainPink);
 }
 /* endo of banner */

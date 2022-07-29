@@ -81,7 +81,7 @@ body {
   font-size: 4rem;
 }
 .banner-img {
-  width: 30%;
+  width: 60%;
   display: inline-block;
   margin-right: -6.25rem;
   margin-left: -6.25rem;
@@ -275,14 +275,20 @@ body {
   right: 0;
   transform: translateX(60%);
 }
-
+.h1,
+h1,
+.h1-title {
+  display: grid;
+}
 /* responsividade */
-@media (min-width: 576px) {
-}
 
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
 @media (min-width: 1200px) {
+  .h1,
+  h1,
+  .h1-title {
+    display: block;
+  }
+  .banner-img {
+    width: 30%;
+  }
 }

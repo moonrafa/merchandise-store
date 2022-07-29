@@ -69,3 +69,18 @@
     document.querySelector('.item-total').textContent = finalMoney
   }
 })()
+
+//delete single item
+;(function () {
+  const deleteBtn = document.querySelectorAll('.store-item-remove')
+  cartBtn.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      if (e.target.parentElement.classList.contains('store-item-remove')) {
+      }
+    })
+  })
+})()
+//clear cart
+//checkout
+//fixed navbar
+//filter buttons

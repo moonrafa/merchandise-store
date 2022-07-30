@@ -7,6 +7,7 @@
     const cartItems = document.querySelectorAll('.cart-item')
     if (cartItems.length > 0) {
       cart.classList.toggle('show-cart')
+      deleteSingleItem()
     } else {
       alert('Empty cart')
     }
@@ -54,7 +55,7 @@
         const cart = document.getElementById('cart')
         const total = document.querySelector('.cart-total-container')
         cart.insertBefore(cartItem, total)
-        alert('item added to the cart')
+        alert('Item added to the cart')
         showTotal()
       }
     })
@@ -69,11 +70,13 @@
       total += item
       return total
     }, 0)
+
     const finalMoney = totalMoney.toFixed(2)
     document.getElementById('cart-total').textContent = finalMoney
     document.getElementById('item-count').textContent = total.length
     document.querySelector('.item-total').textContent = finalMoney
     emptyCart()
+    deleteSingleItem()
   }
 })()
 
@@ -86,6 +89,7 @@
     if (cartItems.length > 0) {
       cartItems.forEach(function (item) {
         cart.removeChild(item)
+        console.log(item)
       })
     }
     emptyCart()
@@ -101,19 +105,39 @@ function emptyCart() {
     document.querySelector('.item-total').textContent = 0
   }
 }
-//delete single item
-;(function () {
-  const deleteBtn = document.querySelectorAll('.store-item-remove')
-  const cartBtn = document.querySelectorAll('.store-item-icon')
-  cartBtn.forEach(function (btn) {
+//single item event listener
+function deleteSingleItem() {
+  const cart = document.querySelector('#cart')
+  const deleteBtn = document.querySelectorAll('.cart-item-remove')
+  deleteBtn.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-      if (e.target.parentElement.classList.contains('store-item-remove')) {
+      const element = e.target.parentElement.parentElement
+      if (cart.contains(element)) {
+        cart.removeChild(element)
+        //count itens
+        showTotal()
       }
+      emptyCart()
     })
   })
-})()
+  function showTotal() {
+    const total = []
+    const items = document.querySelectorAll('.cart-item-price')
+    items.forEach(function (item) {
+      total.push(parseFloat(item.textContent))
+    })
+    const totalMoney = total.reduce(function (total, item) {
+      total += item
+      return total
+    }, 0)
+
+    const finalMoney = totalMoney.toFixed(2)
+    document.getElementById('cart-total').textContent = finalMoney
+    document.getElementById('item-count').textContent = total.length
+    document.querySelector('.item-total').textContent = finalMoney
+  }
+}
 //checkout
-//change favico
 //fixed navbar
 //filter buttons
 //cart showing on mobile

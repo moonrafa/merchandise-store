@@ -1,16 +1,22 @@
 //show cart
 //immediately invoked function
-
 ;(function () {
   const cartInfo = document.getElementById('cart-info')
   const cart = document.getElementById('cart')
   cartInfo.addEventListener('click', function () {
-    cart.classList.toggle('show-cart')
+    const cartItems = document.querySelectorAll('.cart-item')
+    if (cartItems.length > 0) {
+      cart.classList.toggle('show-cart')
+    } else {
+      alert('Empty cart')
+    }
   })
 })()
+
 //add items to the cart
 ;(function () {
   const cartBtn = document.querySelectorAll('.store-item-icon')
+
   cartBtn.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       if (e.target.parentElement.classList.contains('store-item-icon')) {
@@ -67,12 +73,38 @@
     document.getElementById('cart-total').textContent = finalMoney
     document.getElementById('item-count').textContent = total.length
     document.querySelector('.item-total').textContent = finalMoney
+    emptyCart()
   }
 })()
 
+//clear cart
+;(function () {
+  const clearCart = document.getElementById('clear-cart')
+  const cart = document.querySelector('.cart')
+  clearCart.addEventListener('click', function () {
+    const cartItems = document.querySelectorAll('.cart-item')
+    if (cartItems.length > 0) {
+      cartItems.forEach(function (item) {
+        cart.removeChild(item)
+      })
+    }
+    emptyCart()
+  })
+})()
+//empty cart
+function emptyCart() {
+  const cartItems = document.querySelectorAll('.cart-item')
+  if (cartItems.length <= 0) {
+    document.getElementById('item-count').textContent = 0
+    const cartTotalContainer = document.querySelector('.cart')
+    cartTotalContainer.classList.remove('show-cart')
+    document.querySelector('.item-total').textContent = 0
+  }
+}
 //delete single item
 ;(function () {
   const deleteBtn = document.querySelectorAll('.store-item-remove')
+  const cartBtn = document.querySelectorAll('.store-item-icon')
   cartBtn.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       if (e.target.parentElement.classList.contains('store-item-remove')) {
@@ -80,7 +112,8 @@
     })
   })
 })()
-//clear cart
 //checkout
+//change favico
 //fixed navbar
 //filter buttons
+//cart showing on mobile

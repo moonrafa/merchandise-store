@@ -137,7 +137,7 @@ function deleteSingleItem() {
     document.querySelector('.item-total').textContent = finalMoney
   }
 }
-//checkout
-//fixed navbar
+//checkout modal
 //filter buttons
 //cart showing on mobile
+//fixed navbar
